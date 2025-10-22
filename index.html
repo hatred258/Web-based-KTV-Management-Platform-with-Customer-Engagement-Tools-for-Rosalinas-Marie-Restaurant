@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-Based KTV Management Platform with Customer Engagement Tools for Rosalina's and Marie Restaurant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': '#1a1a1a',
+              'brand-surface': '#2a2a2a',
+              'brand-primary': '#ff8c00', // Warm orange
+              'brand-secondary': '#f0f',   // Neon magenta
+              'brand-accent': '#0ff',     // Neon cyan
+              'brand-text': '#f5f5f5',
+              'brand-text-secondary': '#a0a0a0',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Bungee', 'cursive'],
+            },
+            boxShadow: {
+              'neon-primary': '0 0 5px #ff8c00, 0 0 10px #ff8c00, 0 0 15px #ff8c00',
+              'neon-secondary': '0 0 5px #f0f, 0 0 10px #f0f, 0 0 15px #f0f',
+              'neon-accent': '0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff',
+              'neon-green': '0 0 5px #4ade80, 0 0 10px #4ade80',
+              'neon-yellow': '0 0 5px #facc15, 0 0 10px #facc15',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+  <style>
+    @keyframes gradient-animation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    body {
+      background: linear-gradient(-45deg, #1a1a1a, #2a0a2a, #1a1a1a, #0a2a2a);
+      background-size: 400% 400%;
+      animation: gradient-animation 15s ease infinite;
+    }
+  </style>
+</head>
+  <body class="bg-brand-bg text-brand-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
